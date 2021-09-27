@@ -1,126 +1,224 @@
 body {
-    font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 3.5rem;
-    line-height: 1.5;
-    font-weight: 900;
-    font-style: normal;
-
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+  font-style: normal;
 }
 
 h2 {
-    font-family: "Montserrat";
-    font-weight: bold;
-    font-size: 3rem;
-    line-height: 1.5;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding-top: 5%;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 p {
-    padding-top: 5%;
-    font-size: 1rem;
-    color: #8f8f8f;
+  font-size: 1rem;
+  color: #8f8f8f;
 }
 
 #title {
-    background-color: #f55e74;
-    color: white;
+  background-color: #f55e74;
+  color: white;
 }
 
 .container-fluid {
-    padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 
 /* Navigation Bar */
 
 .navbar {
-    padding-bottom: 4.5rem;
+  padding-bottom: 4.5rem;
 }
 
 .navbar-nav {
-    font-size: 2rem;
-    font-weight: 400;
+  font-size: 2rem;
+  font-weight: 400;
 }
 
 .navbar-brand {
-    font-size: 2.5rem;
-    font-weight: bold;
-    font-family: "Ubuntu", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .nav-item {
-    padding: 0 18px;
+  padding: 0 18px;
 }
 
 .nav-link {
-    font-size: 1.2rem;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 
 /* Download Buttons */
 
 .download-button {
-    margin: 5% 3% 5% 0;
+  margin: 5% 3% 5% 0;
 }
 
-/* Title Image */
+/* Title */
+
+.title-col {
+  height: 400px;
+}
 
 .title-img {
-    width: 60%;
-    transform: rotate(25deg);
+  transform: rotate(25deg);
+
+  position: relative;
+
+  width: 20rem;
+
+  left: 30%;
+
+  margin-bottom: 0%;
+}
+
+@media (max-width: 1028px) {
+  #title-items {
+    text-align: center;
+  }
+
+  .title-img {
+    transform: rotate(0deg);
+    position: relative;
+    left: 25%;
+  }
+}
+
+title-img-div {
+  position: relative;
 }
 
 /* Features */
 
 #features {
-    text-align: center;
-    margin: 5% 3% 5% 0;
+  padding: 7% 15%;
+
+  background-color: #fff;
+
+  position: relative;
+
+  text-align: center;
+}
+
+.feature-title {
+  padding-top: 5%;
+}
+
+.feature-text {
+  padding-top: 5%;
 }
 
 .feature-icon {
-    color: #ef8172;
-    font-size: 4rem;
+  color: #ef8172;
+  font-size: 4rem;
 }
 
 .feature-icon:hover {
-    color: #f35b72;
+  color: #f35b72;
 }
 
 /* Testimonial Section */
 
 #testimonials {
-
-    text-align: center;
-    background-color: #f35b72;
-    color: white;
+  text-align: center;
+  background-color: #f35b72;
+  color: white;
 }
 
 .testimonial-img {
-    border-radius: 100%;
-    width: 10%;
-    margin: 20px;
+  border-radius: 100%;
+  width: 10%;
+  margin: 20px;
 }
 
 #press {
-    background-color: #f35b72;
-    text-align: center;
-    padding-bottom: 3%;
+  background-color: #f35b72;
+  text-align: center;
+  padding-bottom: 3%;
 }
 
 .press-logo {
-    width: 10%;
-    margin: 20px;
+  width: 10%;
+  margin: 20px;
 }
 
 .carousel-item {
-    padding: 7% 15%;
+  padding: 7% 15%;
+}
+
+/* Pricing */
+
+#pricing {
+  padding: 100px;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+/* Call to Action */
+
+#cta {
+  text-align: center;
+  background-color: #f35b72;
+  height: 500px;
+}
+
+.end-page-container {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.end-page-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 3.5rem;
+  color: white;
+  padding-top: 150px;
+}
+
+@media (max-width: 1028px) {
+  .end-page-text {
+    font-size: 3rem;
+  }
+}
+
+/* Footer */
+
+#footer {
+  height: 200px;
+  text-align: center;
+}
+
+.footer-p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: grey;
+}
+
+.social-container {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon {
+  margin: 60px 10px 15px 10px;
 }
